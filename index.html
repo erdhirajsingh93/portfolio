@@ -1,71 +1,107 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dhiraj Singh - DevOps Portfolio</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dhiraj Singh — DevOps Portfolio</title>
+  <meta name="description" content="Dhiraj Singh — DevOps Engineer. Terraform, AKS, CI/CD, Monitoring and Automation."/>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="hero">
-      <img src="images/profile.jpg" alt="Dhiraj Singh">
-      <h1>Dhiraj Singh</h1>
-      <p>DevOps Engineer | Cloud & Automation Enthusiast</p>
-      <a href="https://github.com/yourgithub" class="btn" target="_blank">Visit My GitHub</a>
-    </div>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="bg-ornament" aria-hidden="true"></div>
 
-  <main class="container">
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Terraform Infrastructure</h3>
-          <p>Automated deployment of Azure infrastructure with proper state management and modules.</p>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">DS</div>
+        <div>
+          <h1>Dhiraj Singh</h1>
+          <div class="subtitle">DevOps Engineer</div>
         </div>
-        <div class="card">
-          <h3>CI/CD Pipelines</h3>
-          <p>Implemented Jenkins and GitHub Actions pipelines for automated builds, tests, and deployments.</p>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <aside class="card profile">
+        <img src="images/profile.jpg" alt="Dhiraj Singh" class="glow">
+        <div class="name">Dhiraj Singh</div>
+        <div class="role">DevOps Engineer — Cloud, Automation, Observability</div>
+        <div class="intro">I design infrastructure-as-code, build CI/CD pipelines and run production-grade observability for cloud-native apps.</div>
+
+        <div class="links">
+          <a class="btn" href="https://github.com/erdhirajsingh93" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/dhirajsingh93/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
-        <div class="card">
-          <h3>Docker & Kubernetes</h3>
-          <p>Containerized applications and deployed scalable clusters on AKS.</p>
+
+        <div class="contact-card">
+          <strong>Contact</strong>
+          <div class="contact">
+            <div><span class="muted">Phone:</span> <a href="tel:+919296036356">+91-9296036356</a></div>
+            <div><span class="muted">Email:</span> <a href="mailto:dhirajk4@gmail.com">dhirajk4@gmail.com</a></div>
+          </div>
         </div>
-        <div class="card">
-          <h3>Monitoring & Logging</h3>
-          <p>Prometheus, Grafana, and ELK stack setup for real-time monitoring and alerts.</p>
+      </aside>
+
+      <div>
+        <div class="card highlight">
+          <h2>Professional Highlights</h2>
+          <p>Experienced in building reliable infrastructure on Azure, automating deployments, and setting up monitoring & alerting for production services. Focused on automation, repeatability and measurable SLAs.</p>
         </div>
+
+        <section id="projects" class="card">
+          <h2>Key Projects</h2>
+          <div class="projects-grid">
+            <article class="proj">
+              <h3>Terraform Infrastructure Automation</h3>
+              <p>Modular Terraform code for multi-environment Azure deployments (resource groups, VNets, AKS, KeyVault) with remote state and CI validation.</p>
+            </article>
+            <article class="proj">
+              <h3>CI/CD & Release Automation</h3>
+              <p>End-to-end pipelines using GitHub Actions & Jenkins — automated build, tests, image scanning, and blue/green deployments.</p>
+            </article>
+            <article class="proj">
+              <h3>Containerization & Orchestration</h3>
+              <p>Containerized microservices with Docker and managed deployments on AKS with Helm charts and autoscaling.</p>
+            </article>
+            <article class="proj">
+              <h3>Monitoring, Logging & Alerting</h3>
+              <p>Prometheus + Grafana dashboards, ELK for logs and alerting rules to reduce MTTD/MTTR for production incidents.</p>
+            </article>
+            <article class="proj">
+              <h3>Infrastructure Testing & Drift Detection</h3>
+              <p>Automated compliance checks and drift detection workflows using tflint, terratest and policy-as-code scans.</p>
+            </article>
+            <article class="proj">
+              <h3>Cost Optimization & Governance</h3>
+              <p>Implemented tagging, Azure Policy & automated schedules to reduce cloud costs and enforce security posture.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="skills">
+          <h2>Skills</h2>
+          <div class="skills">
+            <span class="skill">Terraform</span>
+            <span class="skill">Azure</span>
+            <span class="skill">GitHub Actions</span>
+            <span class="skill">Jenkins</span>
+            <span class="skill">Docker</span>
+            <span class="skill">Kubernetes (AKS)</span>
+            <span class="skill">Prometheus & Grafana</span>
+            <span class="skill">ELK / EFK</span>
+          </div>
+        </section>
       </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills">
-        <span class="skill">Terraform</span>
-        <span class="skill">Azure DevOps</span>
-        <span class="skill">Jenkins</span>
-        <span class="skill">Docker</span>
-        <span class="skill">Kubernetes</span>
-        <span class="skill">Linux</span>
-        <span class="skill">Git & GitHub</span>
-        <span class="skill">Monitoring (Prometheus/Grafana/ELK)</span>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Connect with me on <a href="https://github.com/yourgithub" target="_blank">GitHub</a> for collaborations.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Dhiraj Singh. Built with ❤️ and hosted on GitHub.</p>
-  </footer>
+    <footer>
+      <p>© 2025 Dhiraj Singh • <span>DevOps • Cloud • Automation</span></p>
+    </footer>
+  </div>
 </body>
 </html>
