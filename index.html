@@ -4,104 +4,69 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Dhiraj Singh — DevOps Portfolio</title>
-  <meta name="description" content="Dhiraj Singh — DevOps Engineer. Terraform, AKS, CI/CD, Monitoring and Automation."/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="bg-ornament" aria-hidden="true"></div>
-
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">DS</div>
-        <div>
-          <h1>Dhiraj Singh</h1>
-          <div class="subtitle">DevOps Engineer</div>
-        </div>
+  <div class="container">
+    <!-- Left column -->
+    <aside class="sidebar">
+      <img src="images/profile.jpg" alt="Dhiraj Singh" class="profile-pic">
+      <h1>Dhiraj Singh</h1>
+      <p class="role">DevOps Engineer — Cloud, Automation, Observability</p>
+      <p class="intro">
+        I design infrastructure-as-code, build CI/CD pipelines and run production-grade observability for cloud-native apps.
+      </p>
+      <div class="links">
+        <a href="https://github.com/erdhirajsingh93" target="_blank" class="btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/dhirajsingh93/" target="_blank" class="btn secondary">LinkedIn</a>
       </div>
-      <nav>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <section class="hero">
-      <aside class="card profile">
-        <img src="images/profile.jpg" alt="Dhiraj Singh" class="glow">
-        <div class="name">Dhiraj Singh</div>
-        <div class="role">DevOps Engineer — Cloud, Automation, Observability</div>
-        <div class="intro">I design infrastructure-as-code, build CI/CD pipelines and run production-grade observability for cloud-native apps.</div>
-
-        <div class="links">
-          <a class="btn" href="https://github.com/erdhirajsingh93" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn secondary" href="https://www.linkedin.com/in/dhirajsingh93/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-
-        <div class="contact-card">
-          <strong>Contact</strong>
-          <div class="contact">
-            <div><span class="muted">Phone:</span> <a href="tel:+919296036356">+91-9296036356</a></div>
-            <div><span class="muted">Email:</span> <a href="mailto:dhirajk4@gmail.com">dhirajk4@gmail.com</a></div>
-          </div>
-        </div>
-      </aside>
-
-      <div>
-        <div class="card highlight">
-          <h2>Professional Highlights</h2>
-          <p>Experienced in building reliable infrastructure on Azure, automating deployments, and setting up monitoring & alerting for production services. Focused on automation, repeatability and measurable SLAs.</p>
-        </div>
-
-        <section id="projects" class="card">
-          <h2>Key Projects</h2>
-          <div class="projects-grid">
-            <article class="proj">
-              <h3>Terraform Infrastructure Automation</h3>
-              <p>Modular Terraform code for multi-environment Azure deployments (resource groups, VNets, AKS, KeyVault) with remote state and CI validation.</p>
-            </article>
-            <article class="proj">
-              <h3>CI/CD & Release Automation</h3>
-              <p>End-to-end pipelines using GitHub Actions & Jenkins — automated build, tests, image scanning, and blue/green deployments.</p>
-            </article>
-            <article class="proj">
-              <h3>Containerization & Orchestration</h3>
-              <p>Containerized microservices with Docker and managed deployments on AKS with Helm charts and autoscaling.</p>
-            </article>
-            <article class="proj">
-              <h3>Monitoring, Logging & Alerting</h3>
-              <p>Prometheus + Grafana dashboards, ELK for logs and alerting rules to reduce MTTD/MTTR for production incidents.</p>
-            </article>
-            <article class="proj">
-              <h3>Infrastructure Testing & Drift Detection</h3>
-              <p>Automated compliance checks and drift detection workflows using tflint, terratest and policy-as-code scans.</p>
-            </article>
-            <article class="proj">
-              <h3>Cost Optimization & Governance</h3>
-              <p>Implemented tagging, Azure Policy & automated schedules to reduce cloud costs and enforce security posture.</p>
-            </article>
-          </div>
-        </section>
-
-        <section id="skills">
-          <h2>Skills</h2>
-          <div class="skills">
-            <span class="skill">Terraform</span>
-            <span class="skill">Azure</span>
-            <span class="skill">GitHub Actions</span>
-            <span class="skill">Jenkins</span>
-            <span class="skill">Docker</span>
-            <span class="skill">Kubernetes (AKS)</span>
-            <span class="skill">Prometheus & Grafana</span>
-            <span class="skill">ELK / EFK</span>
-          </div>
-        </section>
+      <div class="contact">
+        <p><strong>📞</strong> <a href="tel:+919296036356">+91-9296036356</a></p>
+        <p><strong>✉️</strong> <a href="mailto:dhirajk4@gmail.com">dhirajk4@gmail.com</a></p>
       </div>
-    </section>
+    </aside>
 
-    <footer>
-      <p>© 2025 Dhiraj Singh • <span>DevOps • Cloud • Automation</span></p>
-    </footer>
+    <!-- Right column -->
+    <main class="content">
+      <section class="card">
+        <h2>Professional Highlights</h2>
+        <p>
+          Experienced in building reliable infrastructure on Azure, automating deployments,
+          and setting up monitoring & alerting for production services.
+          Focused on automation, repeatability and measurable SLAs.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Key Projects</h2>
+        <ul class="projects">
+          <li><strong>Terraform Infrastructure Automation:</strong> Modular Terraform code for Azure (VNets, AKS, KeyVault, remote state, CI validation).</li>
+          <li><strong>CI/CD & Release Automation:</strong> GitHub Actions & Jenkins pipelines for automated build, tests, image scanning, blue/green deploys.</li>
+          <li><strong>Containerization & Orchestration:</strong> Dockerized microservices deployed on AKS with Helm & autoscaling.</li>
+          <li><strong>Monitoring & Logging:</strong> Prometheus + Grafana, ELK for observability & alerting to reduce MTTR.</li>
+          <li><strong>Infra Testing & Drift Detection:</strong> Automated compliance & drift detection using tflint, terratest, policy-as-code.</li>
+          <li><strong>Cost Optimization & Governance:</strong> Implemented Azure Policy, tagging & schedules to cut costs.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Skills</h2>
+        <div class="skills">
+          <span>Terraform</span>
+          <span>Azure</span>
+          <span>GitHub Actions</span>
+          <span>Jenkins</span>
+          <span>Docker</span>
+          <span>Kubernetes (AKS)</span>
+          <span>Prometheus & Grafana</span>
+          <span>ELK / EFK</span>
+        </div>
+      </section>
+    </main>
   </div>
+
+  <footer>
+    © 2025 Dhiraj Singh • DevOps • Cloud • Automation
+  </footer>
 </body>
 </html>
